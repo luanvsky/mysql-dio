@@ -42,3 +42,6 @@ codigo_rastreio: Código de rastreamento da entrega.
 **Considerações Finais**
 
 Este projeto visa melhorar a gestão de informações de clientes, pagamentos e entregas, fornecendo uma estrutura clara e funcional para futuras avaliações e implementações.
+
+
+https://raw.githubusercontent.com/luanvsky/mysql-dio/refs/heads/main/e-commerce.png
