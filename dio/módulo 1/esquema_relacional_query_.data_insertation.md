@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/f53b59a6-adcc-493e-aab9-044ddc4b3764)
+
+
 -- criação do banco de dados para o cenário de E-commerce 
 -- drop database ecommerce;
 create database ecommerce;
