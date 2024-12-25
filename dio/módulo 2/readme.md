@@ -1,3 +1,7 @@
+![despesa-ifs-menu](https://github.com/user-attachments/assets/eb46b15e-aad3-498b-b9d7-c25c42530c55)
+
+
+
 ## Arquivos 📂
 
 ### 1. Criação do Banco de Dados e Tabelas (create_tables.sql) 🛠️
