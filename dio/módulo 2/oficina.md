@@ -1,12 +1,12 @@
 # Projeto de Banco de Dados para Oficina 🚗🔧
 
-Bem-vindo ao projeto de criação e implementação de um banco de dados para uma oficina! Este projeto envolve a transformação do esquema conceitual em um esquema lógico e sua implementação prática. Siga os passos abaixo para entender cada etapa do processo.
+Bem-vindo ao projeto de criação e implementação de um banco de dados para uma oficina! Este projeto envolve a transformação do esquema conceitual em um esquema lógico e sua implementação prática.
 
 ## 1. Análise do Esquema Conceitual 📝
-Revise o esquema conceitual que você criou anteriormente usando o modelo Entidade-Relacionamento (ER). Este esquema deve incluir todas as entidades e relacionamentos necessários para o contexto de uma oficina, como **Clientes**, **Veículos**, **Serviços**, **Funcionários** e **Peças**.
+Revisei o esquema conceitual que criei anteriormente usando o modelo Entidade-Relacionamento (ER). Este esquema foi incluído com todas as entidades e relacionamentos necessários para o contexto da oficina. **Clientes**, **Veículos**, **Serviços**, **Funcionários** e **Peças**.
 
 ## 2. Criação do Esquema Lógico 💻
-Transforme o esquema conceitual em um esquema lógico, que define a estrutura do banco de dados em termos de tabelas, colunas, tipos de dados e chaves. Abaixo estão as tabelas a serem criadas:
+Transformei o esquema conceitual em um esquema lógico, que defini a estrutura do banco de dados em termos de tabelas, colunas, tipos de dados e chaves. Abaixo estão as tabelas criadas:
 
 - **Tabela Clientes** 🧑‍🤝‍🧑
   - **ID_Cliente** (INT, PRIMARY KEY): Identificador único para cada cliente.
@@ -57,7 +57,7 @@ Transforme o esquema conceitual em um esquema lógico, que define a estrutura do
   - **Preço** (DECIMAL): Preço do serviço prestado.
 
 ## 3. Implementação do Banco de Dados 🗄️
-Utilizado os comandos SQL para criar as tabelas no banco de dados.
+Comandos SQL para criar as tabelas no banco de dados.
 ```sql
      CREATE TABLE Clientes (
          ID_Cliente INT PRIMARY KEY,
@@ -127,7 +127,7 @@ Utilizado os comandos SQL para criar as tabelas no banco de dados.
 ````
 
 ## 4. Inserção de Dados 📥
-Criar comandos SQL para inserir dados nas tabelas:
+Comandos SQL para inserir dados nas tabelas:
 ```sql
 -- Inserindo dados na tabela Clientes
 INSERT INTO Clientes (ID_Cliente, Nome, Telefone, Endereço)
