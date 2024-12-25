@@ -76,4 +76,14 @@ CREATE TABLE Veículos (
     FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID_Cliente)
 );
 
+-- Crie comandos SQL para inserir dados nas tabelas. Exemplo para inserir um cliente:
+INSERT INTO Clientes (ID_Cliente, Nome, Telefone, Endereço)
+VALUES (1, 'João Silva', '1234-5678', 'Rua A, 123');
+
+-- Desenvolva consultas SQL para obter as informações necessárias. Exemplo para listar todos os serviços de uma ordem específica:
+SELECT s.Descrição, so.Preço
+FROM Serviços s
+JOIN Serviços_Ordem so ON s.ID_Serviço = so.ID_Serviço
+WHERE so.ID_Ordem = 1;
+
 -- Continue criando as outras tabelas de acordo com o esquema lógico.
