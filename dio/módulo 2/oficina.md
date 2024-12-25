@@ -260,11 +260,9 @@ FROM Clientes c
 JOIN Veículos v ON c.ID_Cliente = v.ID_Cliente
 JOIN Ordens_de_Serviço o ON v.ID_Veículo = o.ID_Veículo;
 ````
-
-Esta consulta usa as cláusulas JOIN para combinar tabelas e fornece uma visão abrangente dos clientes, veículos e status das ordens de serviço.
+*Esta consulta usa as cláusulas JOIN para combinar tabelas e fornece uma visão abrangente dos clientes, veículos e status das ordens de serviço.*
 
 Quais serviços e peças foram utilizados em uma ordem de serviço específica?🛠️🔧
-
 ````sql
 SELECT o.ID_Ordem, s.Descrição AS Serviço, p.Descrição AS Peça
 FROM Ordens_de_Serviço o
@@ -274,21 +272,18 @@ JOIN Peças_Ordem po ON o.ID_Ordem = po.ID_Ordem
 JOIN Peças p ON po.ID_Peça = p.ID_Peça
 WHERE o.ID_Ordem = 1;
 ````
-Esta consulta utiliza as cláusulas JOIN e WHERE para obter detalhes específicos sobre uma ordem de serviço.
+*Esta consulta utiliza as cláusulas JOIN e WHERE para obter detalhes específicos sobre uma ordem de serviço.*
 
 Quais funcionários realizaram ordens de serviço e quais são os clientes correspondentes?👷🧑‍🤝‍🧑
-
 ````sql
 SELECT f.Nome AS Funcionário, c.Nome AS Cliente, o.ID_Ordem, o.Status
 FROM Funcionários f
 JOIN Ordens_de_Serviço o ON f.ID_Funcionário = o.ID_Funcionário
 JOIN Clientes c ON o.ID_Cliente = c.ID_Cliente;
 ````
-
-Esta consulta usa as cláusulas JOIN para fornecer informações sobre funcionários, clientes e ordens de serviço.
+*Esta consulta usa as cláusulas JOIN para fornecer informações sobre funcionários, clientes e ordens de serviço.*
 
 Quais são os clientes e os preços dos serviços que eles contrataram?💵🧑‍🤝‍🧑
-
 ````sql
 SELECT c.Nome AS Cliente, s.Descrição AS Serviço, so.Preço
 FROM Clientes c
@@ -296,10 +291,9 @@ JOIN Ordens_de_Serviço o ON c.ID_Cliente = o.ID_Cliente
 JOIN Serviços_Ordem so ON o.ID_Ordem = so.ID_Ordem
 JOIN Serviços s ON so.ID_Serviço = s.ID_Serviço;
 ````
-Esta consulta utiliza as cláusulas JOIN para combinar dados sobre clientes e os serviços que contrataram.
+*Esta consulta utiliza as cláusulas JOIN para combinar dados sobre clientes e os serviços que contrataram.*
 
 Qual é o resumo das ordens de serviço, incluindo o cliente, o veículo, o funcionário responsável e o total de peças usadas?📋🚗👷🔩
-
 ````sql
 SELECT o.ID_Ordem, c.Nome AS Cliente, v.Modelo AS Veículo, f.Nome AS Funcionário, SUM(po.Quantidade) AS Total_Peças
 FROM Ordens_de_Serviço o
@@ -309,7 +303,7 @@ JOIN Funcionários f ON o.ID_Funcionário = f.ID_Funcionário
 JOIN Peças_Ordem po ON o.ID_Ordem = po.ID_Ordem
 GROUP BY o.ID_Ordem, c.Nome, v.Modelo, f.Nome;
 ````
-Esta consulta utiliza as cláusulas JOIN e GROUP BY para fornecer um resumo detalhado das ordens de serviço.
+*Esta consulta utiliza as cláusulas JOIN e GROUP BY para fornecer um resumo detalhado das ordens de serviço.*
 
 
 
