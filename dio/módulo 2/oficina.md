@@ -178,13 +178,48 @@ VALUES (1, 1, 150.00),
        (3, 3, 500.00);
 ````
 
-## 5.Consultas 🔍
-Desenvolvido consultas SQL para obter as informações necessárias.
+## 5.Consultas com Junções🔗
+Listar os clientes junto com os modelos de seus veículos e o status de suas ordens de serviço:
 ````sql
-SELECT s.Descrição, so.Preço
-FROM Serviços s
-JOIN Serviços_Ordem so ON s.ID_Serviço = so.ID_Serviço
-WHERE so.ID_Ordem = 1;
+SELECT c.Nome AS Cliente, v.Modelo AS Veículo, o.Status AS Status_Ordem
+FROM Clientes c
+JOIN Veículos v ON c.ID_Cliente = v.ID_Cliente
+JOIN Ordens_de_Serviço o ON v.ID_Veículo = o.ID_Veículo;
+````
+Obter a descrição dos serviços e as peças utilizadas em uma ordem de serviço específica:
+````sql
+SELECT o.ID_Ordem, s.Descrição AS Serviço, p.Descrição AS Peça
+FROM Ordens_de_Serviço o
+JOIN Serviços_Ordem so ON o.ID_Ordem = so.ID_Ordem
+JOIN Serviços s ON so.ID_Serviço = s.ID_Serviço
+JOIN Peças_Ordem po ON o.ID_Ordem = po.ID_Ordem
+JOIN Peças p ON po.ID_Peça = p.ID_Peça
+WHERE o.ID_Ordem = 1;
+````
+Mostrar os funcionários junto com as ordens de serviço que eles realizaram e o cliente correspondente:
+````sql
+SELECT f.Nome AS Funcionário, c.Nome AS Cliente, o.ID_Ordem, o.Status
+FROM Funcionários f
+JOIN Ordens_de_Serviço o ON f.ID_Funcionário = o.ID_Funcionário
+JOIN Clientes c ON o.ID_Cliente = c.ID_Cliente;
+````
+Listar os clientes e os preços dos serviços que eles contrataram:
+````sql
+SELECT c.Nome AS Cliente, s.Descrição AS Serviço, so.Preço
+FROM Clientes c
+JOIN Ordens_de_Serviço o ON c.ID_Cliente = o.ID_Cliente
+JOIN Serviços_Ordem so ON o.ID_Ordem = so.ID_Ordem
+JOIN Serviços s ON so.ID_Serviço = s.ID_Serviço;
+````
+Obter um resumo das ordens de serviço, incluindo o cliente, o veículo, o funcionário responsável e o total de peças usadas:
+````sql
+SELECT o.ID_Ordem, c.Nome AS Cliente, v.Modelo AS Veículo, f.Nome AS Funcionário, SUM(po.Quantidade) AS Total_Peças
+FROM Ordens_de_Serviço o
+JOIN Clientes c ON o.ID_Cliente = c.ID_Cliente
+JOIN Veículos v ON o.ID_Veículo = v.ID_Veículo
+JOIN Funcionários f ON o.ID_Funcionário = f.ID_Funcionário
+JOIN Peças_Ordem po ON o.ID_Ordem = po.ID_Ordem
+GROUP BY o.ID_Ordem, c.Nome, v.Modelo, f.Nome;
 ````
 
 ## 6. Queries Avançadas 🔎
