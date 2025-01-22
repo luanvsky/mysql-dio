@@ -31,9 +31,13 @@ Essa consulta verifica todas as restrições de tabela dentro do esquema "azure_
 
 Cria uma tabela "employee" com várias colunas e algumas restrições 📋📊:
 
-chk_salary_employee: Verifica se o salário é maior que 2000 💰.
+chk_salary_employee: 
 
-pk_employee: Define a chave primária como o número do seguro social (Ssn) 🔑.
+Verifica se o salário é maior que 2000 💰.
+
+pk_employee: 
+
+Define a chave primária como o número do seguro social (Ssn) 🔑.
 
 ## Adição de Chave Estrangeira 🔗
 
@@ -68,7 +72,9 @@ Modifica a coluna "Dno" para que não permita valores nulos e tenha um valor pad
 ``
 Cria uma tabela "departament" com várias colunas e restrições 📋🔗:
 
-chk_date_dept: Verifica se a data de criação do departamento é anterior à data de início do gerente 📅.
+chk_date_dept
+
+Verifica se a data de criação do departamento é anterior à data de início do gerente 📅.
 
 pk_dept: Define a chave primária como o número do departamento (Dnumber) 🔑.
 
