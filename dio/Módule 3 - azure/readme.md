@@ -152,11 +152,68 @@ create table dependent(
 );
 ``
 Remove a tabela "dependent" se existir e recria-a para registrar dependentes dos funcionários, com chaves primárias compostas e uma chave estrangeira 👪🔗.
-## Mostra Tabelas e Descrição 📋
+
+
+# Mostra Tabelas e Descrição 📋
 ``show tables;
 desc dependent;
 ``
 Mostra todas as tabelas do esquema atual e descreve a estrutura da tabela "dependent" 🗃️🔍.
+
+## **Criando um Banco de Dados de Funcionários: Uma Explicação Passo a Passo**
+
+Imagine que estamos construindo um grande álbum de figurinhas, mas em vez de jogadores de futebol, nossas figurinhas são informações sobre funcionários de uma empresa. Cada figurinha representa um funcionário, um departamento, um projeto ou qualquer outra informação importante.
+
+**O que o código está fazendo:**
+
+* **`use company_constraints;`:**  
+  * É como escolher um álbum específico para trabalharmos. Nesse caso, estamos escolhendo o álbum chamado "company_constraints".
+
+* **`insert into employee ...`:** 
+  *  Estamos colando novas figurinhas no álbum, cada uma representando um funcionário. As informações da figurinha incluem:
+    * Nome completo
+    * Número de identificação (como um RG)
+    * Data de nascimento
+    * Endereço
+    * Salário
+    * E outras informações importantes.
+
+* **`insert into dependent ...`:**
+  * Estamos adicionando figurinhas de dependentes desses funcionários, como filhos ou cônjuges.
+
+* **`insert into department ...`:**
+  * Estamos criando figurinhas para representar os departamentos da empresa, como "Recursos Humanos", "Marketing", etc.
+
+* **`insert into dept_locations ...`:**
+  * Estamos mostrando onde cada departamento fica localizado.
+
+* **`insert into project ...`:**
+  * Estamos adicionando figurinhas para representar os projetos que a empresa está fazendo.
+
+* **`insert into works_on ...`:**
+  * Estamos mostrando quem está trabalhando em cada projeto.
+
+**Em resumo:**
+
+Esse código está criando um banco de dados para uma empresa. É como construir um grande arquivo com todas as informações sobre os funcionários, seus projetos e a estrutura da empresa. Cada linha de código é como uma nova página nesse arquivo, onde adicionamos uma nova informação.
+
+**Por que usar um banco de dados?**
+* **Organização:** Todas as informações ficam em um só lugar e são fáceis de encontrar.
+* **Eficiência:** Podemos buscar e atualizar informações rapidamente.
+* **Segurança:** Podemos proteger as informações importantes da empresa.
+
+**Imagine que você é o gerente de RH:**
+Com esse banco de dados, você pode:
+* Ver a lista completa de funcionários.
+* Procurar por um funcionário específico.
+* Calcular o salário total da empresa.
+* Ver quais projetos cada funcionário está trabalhando.
+
+**É como ter um superpoder para gerenciar a empresa!**
+
+**Quer aprender mais sobre bancos de dados e SQL?** Me diga e posso te explicar com mais detalhes! 
+
+**Gostaria de adicionar alguma animação ou gráfico para ilustrar melhor?** Posso te ajudar com isso também!
 
 
 
