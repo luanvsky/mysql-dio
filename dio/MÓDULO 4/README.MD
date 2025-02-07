@@ -48,10 +48,11 @@ Reorganizar colunas e construir novas colunas a partir de condicionais, como um 
 | 3           | Livraria      |
 
 ### F_Despesas:
-"ID_despesa","ID_produto","ID_vendedor","Quantidade","Total_Compra","Faixa_Desconto","Categoria","Data",
-"1","1","1","50","$150","Nenhum","Alimentação","2025-01-01",
-"2","2","2","20","40","Nenhum","Transporte","2025-01-10",
-"3","3","3","5","$50","Nenhum","Educação","2025-01-15",
+
+"ID_despesa","ID_produto","ID_vendedor","Quantidade","Total_Compra","Faixa_Desconto","Categoria","Data"
+"1","1","1","50","$150","Nenhum","Alimentação","2025-01-01"
+"2","2","2","20","40","Nenhum","Transporte","2025-01-10"
+"3","3","3","5","$50","Nenhum","Educação","2025-01-15"
 
 Com esse projeto, você conseguirá acompanhar suas despesas pessoais de forma detalhada e organizada. 🚀 
 
