@@ -15,7 +15,7 @@ O repositório está organizado da seguinte forma:
 - **Projetos Práticos**
   - [Projeto 1](https://github.com/luanvsky/mysql-dio/tree/f1fc70e141160244bee2590590a1b7494302c276/dio) : Cria o esquema conceitual para o contexto de oficina com base na narrativa fornecida
 - **Ideias Próprias**
-  - [Ideia 1](./ideias/ideia1) : Distribuição de atividades no setor de trabalho.
+  - [Ideia - sql impconfreg](https://g.co/gemini/share/e1d84c28d571) : Distribuição de atividades no setor de trabalho.
 
 ## Como Usar
 
