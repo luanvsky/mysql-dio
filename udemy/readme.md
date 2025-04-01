@@ -1,5 +1,5 @@
 # 📚🕵️‍♂️ Para te ajudar a lembrar onde você parou nos seus estudos, sem esquecer nada e evitando aquele momento "onde foi que eu parei mesmo?" 😂
-### [Felipe Mafra](https://www.udemy.com/share/101WBE3@6giKCTxx0JE6uj8wRjgh_--NG-DvXwlgHkQxXGDwvYO9pm2nZ0_ug1IeGkbsgxzV/0)
+# [Felipe Mafra](https://www.udemy.com/share/101WBE3@k3c6bJnjpxU5H4paLiFoG5VHyvyl1m6hqqzKDwBdJPxltrlotrhio7pGqjaRqCXD/)
 
 
 # 📌 A Cláusula WHERE no SQL
