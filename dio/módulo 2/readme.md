@@ -339,4 +339,5 @@ JOIN Funcionários f ON o.ID_Funcionário = f.ID_Funcionário
 JOIN Peças_Ordem po ON o.ID_Ordem = po.ID_Ordem
 GROUP BY o.ID_Ordem, c.Nome, v.Modelo, f.Nome;
 ````
+
 *Esta consulta utiliza as cláusulas JOIN e GROUP BY para fornecer um resumo detalhado das ordens de serviço.*
