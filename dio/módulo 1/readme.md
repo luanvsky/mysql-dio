@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/f53b59a6-adcc-493e-aab9-044ddc4b3764)
 
-
+````sql
 -- criação do banco de dados para o cenário de E-commerce 
 -- drop database ecommerce;
 create database ecommerce;
@@ -264,7 +264,7 @@ select * from clients c
 select c.idClient, Fname, count(*) as Number_of_orders from clients c 
 				inner join orders o ON c.idClient = o.idOrderClient
 		group by idClient; 
-
+````
 
 
 
